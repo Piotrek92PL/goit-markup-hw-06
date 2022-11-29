@@ -273,8 +273,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-  max-width: 1600px; 
-  margin: 0 auto
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /*
@@ -583,7 +583,7 @@ p {
   background-color: #ffffff;
   margin: auto;
   box-sizing: border-box;
-  
+
   /*  padding: 20%; */
   position: relative;
   margin: 221px auto;
@@ -784,24 +784,26 @@ label:focus-within {
   align-items: center;
   padding-left: 14px;
   padding-right: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 10px; 
 }
 .hyperlink {
   color: #2196f3;
 }
+/*
 .modal-icon-check {
   position: absolute;
   top: 444px;
   right: 456px;
   z-index: 7;
-}
+} */
 .modal-icon-checked {
-  position: absolute;
-  top: 444px;
-  right: 456px;
+  position: relative;
+  top: -25px;
+  right: -3px;
   z-index: 8;
-  visibility: hidden;
+  fill:#fff;
 }
+
 .form-button {
   width: 200px;
   height: 50px;
@@ -821,18 +823,52 @@ label:focus-within {
   position: relative;
   top: -40px;
   left: 518px;
-
 }
-.checkbox input[type="checkbox"] {
-    opacity: 0;
+.cb {
+}
+.checkbox-label::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000;
+  border-radius: 2px;
+}
+
+.cb:checked + .checkbox-label::before {
+  background-color: #2196f3;
+  outline: none;
+  background-image: url(../images/icons.svg#icon-icon-check);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 /*
+.checkbox input[type="checkbox"] {
+    visibility: hidden; 
+    cursor: pointer; 
+} 
+.checkbox input:checked + .modal-icon-checked {
+  visibility: visible;
+
+} 
+
 .checkbox input[type="checkbox"] + .modal-icon-checked {
     visibility: hidden;
 } */
+/*
 .checkbox input[type="checkbox"]:checked > .modal-icon-checked {
-    visibility: visible;
-}
+    visibility: visible; 
+}*/
 /* brakuje mi przerwy miedzy przyciskiem, a inputem bo nie działa mi z jakiegoś powodu border-box */
 /*
 .footer-label {

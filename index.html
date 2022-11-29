@@ -57,24 +57,25 @@
             ></textarea>
           </label>
           <div class="checkbox">
-            <label for="agreement1">
-              <input type="checkbox" id="agreement1" name="agreement1" value="Agreed" />
-
+            <input
+              class="cb visually-hidden"
+              type="checkbox"
+              id="agreement1"
+              name="agreement1"
+              value="Agreed"
+            />
+            <label for="agreement1" class="checkbox-label">
               <p class="modal-agreement-text">
                 Oświadczam iż akceptuję <a class="hyperlink" href="#">Regulamin</a> i
                 <a class="hyperlink" href="#">Politykę Prywatności.</a>
               </p>
               <span>
-                <svg class="modal-icon-check" width="15" height="15">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg> 
-                <svg class="modal-icon-checked" width="15" height="15">
-                  <use href="./images/icons.svg#icon-icon-check"></use>
+                <svg class="modal-icon-checked" width="11" height="8">
+                  <use href="./images/icons.svg#checked"></use>
                 </svg>
-                </span
-            ></label>
+              </span>
+            </label>
           </div>
-
           <button class="form-button" type="submit">Wyślij</button>
         </form>
       </div>
@@ -457,3 +458,5 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
