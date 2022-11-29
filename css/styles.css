@@ -273,7 +273,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-  /* max-width: 1600px; */
+  max-width: 1600px; 
+  margin: 0 auto
 }
 
 /*
@@ -582,14 +583,16 @@ p {
   background-color: #ffffff;
   margin: auto;
   box-sizing: border-box;
+  
   /*  padding: 20%; */
-  position: fixed;
+  position: relative;
+  margin: 221px auto;
   /*
-  margin: 0 auto;
+  
    top: 28vh;
-  left: 41vw; */
+  left: 41vw; 
   top: 30%;
-  left: 40%;
+  left: 40%;*/
 
   width: 528px;
   height: 581px;
